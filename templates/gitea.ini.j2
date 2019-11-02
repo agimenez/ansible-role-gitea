@@ -58,6 +58,12 @@ LFS_START_SERVER      = true
 LFS_CONTENT_PATH      = {{ gitea_lfs_content_path }}
 {%- endif %}
 
+; HTTPS certificate and files
+{% if gitea_protocol == 'https' %}
+CERT_FILE = {{ gitea_https_cert_file }}
+KEY_FILE = {{ gitea_https_key_file }}
+{% endif %}
+
 [database]
 ; Either "mysql", "postgres", "mssql" or "sqlite3", it's your choice
 DB_TYPE               = {{ gitea_db_type }}

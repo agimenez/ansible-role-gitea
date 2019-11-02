@@ -16,6 +16,8 @@ gitea_http_listen: 127.0.0.1
 gitea_http_port: 3000
 gitea_disable_http_git: false
 gitea_offline_mode: true
+gitea_https_cert_file: "{{ gitea_home }}/custom/https/cert.pem"
+gitea_https_key_file: "{{ gitea_home }}/custom/https/key.pem"
 
 gitea_lfs_server_enabled: false
 gitea_lfs_content_path: "data/lfs"

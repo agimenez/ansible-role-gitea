@@ -82,6 +82,8 @@ The following code has been tested with Debian 8, it should work on Ubuntu as we
 * `gitea_http_listen`: Bind address
 * `gitea_http_port`: Bind port
 * `gitea_disable_http_git`: Disable the use of Git over HTTP ? (true/false)
+* `gitea_https_cert_file`: SSL/TLS certificate for HTTPS
+* `gitea_https_key_file`: Private key for SSL/TLS certificate
 
 ### SSH configuration
 
